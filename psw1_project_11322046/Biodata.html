@@ -1,0 +1,65 @@
+<html> 
+<head> 
+ <title> Latihan ke 3 </title> 
+</head> 
+
+<body bgcolor = "cyan"> 
+<script language="Javascript"> 
+
+function tekan(form) 
+{ 
+
+var nimstr=(document.f10114044.nim.value); 
+var namastr=(document.f10114044.nama.value); 
+var jenisstr=(document.f10114044.jenis.value); 
+var agamastr=(document.f10114044.agama.value); 
+var status=""; 
+ if(form.status.checked==true) 
+  {status="Kawin";} 
+     else 
+  {status="Tidak Kawin";} 
+var jurusanstr=(document.f10114044.jurusan.value); 
+var komstr=(document.f10114044.kom.value); 
+document.f10114044.onim.value=nimstr; 
+document.f10114044.onama.value=namastr; 
+document.f10114044.ojenis.value=jenisstr; 
+document.f10114044.oagama.value=agamastr; 
+document.f10114044.ostatus.value=status; 
+document.f10114044.ojurusan.value=jurusanstr; 
+document.f10114044.okom.value=komstr; 
+
+} 
+</script> 
+
+<center> 
+<h2><b> Data Mahasiswa </h2></b> 
+<h2><b> Institut Teknologi Del</h2></b> 
+<pre><u>                      </center></u></pre><br> 
+
+<form name="f10114044"><pre> 
+NIM   : <input type="text" size="12" name="nim" value="11322046"> 
+Nama Mahasiswa  : <input type="text" size="15" name="nama" value="Indah Permata Sitorus"> 
+Jenis Kelamin  : <select name="jenis" size="1"> 
+      <option value="Pria"> Pria </option> 
+      <option value="Wanita"> Wanita </option></select> 
+Agama   : <select name="agama" size="1"> 
+       <option value="Islam"> Kristen </option> 
+       <option value="Kristen"> Islam </option> 
+       <option value="Hindu"> Hindu </option> 
+       <option value="Budha"> Budha </option> 
+       <option value="Katolik"> Katolik </option></select> 
+Jurusan Di IT DEL : <select name="jurusan" size="1"> 
+      <option value="D3TI"> Teknik Informatika </option> 
+    <option value="D3TK"> Manajemen Informatika </option> 
+      <option value="S1 IF"> Teknik Komputer </option> 
+      <option value="S1 TE"> Teknik Elektro </option> 
+      <option value="S1 MR"> Sistem Informasi </option> 
+      <option value="D4 TRPL"> Teknik Arsitektur </option></select> 
+Komentar  : <textarea name="kom" rows="4" cols="40" ></textarea></pre><br> 
+
+<center> 
+<input type="button" value="Kirim" onclick="tekan(this.form)"> 
+<input type="reset" value="Ulang"></center><br> 
+</form> 
+</body> 
+</html>
